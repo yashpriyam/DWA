@@ -13,5 +13,64 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@mixin nav_link_hover {
+  transition: 0.4s;
+  color: lighten(#222, 50%);
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f9e8d4;
+}
+
+a {
+  color: darken(#e7e7e7, 70%);
+}
+.jumbotron {
+  text-align: center;
+}
+
+.navbar {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar-default {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #D9534F;
+
+  .navbar-nav > li > a {
+    color: #FFF;
+  }
+  .navbar-link {
+    color: #FFF
+  }
+
+  .navbar-brand {
+    color: #FFF;
+    letter-spacing: 1.25px;
+    font-size: 2.1em;
+  }
+}
+
+.item {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 1.5em;
+  .item-title {
+    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+  }
+  .item-desc {
+    font-size: 1em;
+  }
+  .time-ago {
+    color: darken(#e7e7e7, 50%);
+    font-size: 0.55em;
+    letter-spacing: 1.25;
+  }
+}
