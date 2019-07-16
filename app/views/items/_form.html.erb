@@ -1,4 +1,5 @@
 <%= simple_form_for @item do |f| %>
+  <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select Name") %>
   <%= f.input :title, label: "Item Title" %>
   <%= f.input :description %>
   <%= f.input :maximum_XPs, label: "Maximum XPs to be allocated" %>
