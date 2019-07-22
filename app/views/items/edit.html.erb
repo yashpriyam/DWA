@@ -1,5 +1,11 @@
 <div class="col-md-8 col-md-offset-2">
   <h1>Edit Todo Item</h1>
 
-  <%= render 'form' %>
+  <%= simple_form_for @item do |f| %>
+    <%= f.select :category_id, @categories %>
+    <%= f.input :title, label: "Item Title" %>
+    <%= f.input :description %>
+    <%= f.input :maximum_XPs, label: "Maximum XPs to be allocated" %>
+    <%= f.button :submit %>
+  <% end %>
 </div>
