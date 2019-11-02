@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4.1'
-gem 'devise', '~> 4.6.2'
+gem 'devise', '~> 4.7.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
